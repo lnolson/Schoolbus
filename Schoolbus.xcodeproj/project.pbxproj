@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4526F5C92452728900B1EB6F /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4526F5C82452728900B1EB6F /* UserProfile.storyboard */; };
+		4526F5CB245274E800B1EB6F /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4526F5CA245274E800B1EB6F /* UserProfile.storyboard */; };
 		5CB34F8C2450BCA2002E0B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB34F8B2450BCA2002E0B67 /* AppDelegate.swift */; };
 		5CB34F8E2450BCA2002E0B67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB34F8D2450BCA2002E0B67 /* SceneDelegate.swift */; };
 		5CB34F902450BCA2002E0B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB34F8F2450BCA2002E0B67 /* ViewController.swift */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4526F5C82452728900B1EB6F /* UserProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
+		4526F5CA245274E800B1EB6F /* UserProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
 		5CB34F882450BCA2002E0B67 /* Schoolbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schoolbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB34F8B2450BCA2002E0B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CB34F8D2450BCA2002E0B67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 				5CB34F942450BCA4002E0B67 /* Assets.xcassets */,
 				5CB34F962450BCA4002E0B67 /* LaunchScreen.storyboard */,
 				5CB34F992450BCA4002E0B67 /* Info.plist */,
-				4526F5C82452728900B1EB6F /* UserProfile.storyboard */,
+				4526F5CA245274E800B1EB6F /* UserProfile.storyboard */,
 			);
 			path = Schoolbus;
 			sourceTree = "<group>";
@@ -236,7 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CB34F982450BCA4002E0B67 /* LaunchScreen.storyboard in Resources */,
-				4526F5C92452728900B1EB6F /* UserProfile.storyboard in Resources */,
+				4526F5CB245274E800B1EB6F /* UserProfile.storyboard in Resources */,
 				5CB34F952450BCA4002E0B67 /* Assets.xcassets in Resources */,
 				5CB34F932450BCA2002E0B67 /* Main.storyboard in Resources */,
 			);
