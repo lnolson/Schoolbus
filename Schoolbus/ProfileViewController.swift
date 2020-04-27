@@ -24,17 +24,47 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var editLocation: UILabel!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
-    var user = User(biography: "I am a person", name: "Justin Hertzberg", location: "Phoenix, AZ", rating: 10)
+    var user: User?
+    
+    //user = User(biography: "I am a person", name: "Justin Hertzberg", location: "Phoenix, AZ", rating: 10)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // need role and image
-        name.text = user.name
-        location.text = user.location
-        biography.text = user.biography
+        loadSampleUser()
+        
+        name.text = user?.name
+        location.text = user?.location
+        biography.text = user?.biography
+        
+//        if let user = user {
+//        }
     }
     
-    @IBAction func savedEditButtonPressed(_ sender: Any) {
+    func loadSampleUser() {
+        print("load sample users function called")
+        user?.name = "Justin"
+        user?.biography = "I am a student"
+        user?.location = "Phoenix, AZ"
+        user?.rating = 9
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //guard segue.identifier == "editProfile" else {return}
         
+        // populate 'edit' text boxes with user info
+        if (segue.identifier == "editProfile") {
+            print("edit profile")
+            if let uName = user?.name {editName.text = uName}
+            if let uLocation = user?.location {editLocation.text = uLocation}
+            if let uBiography = user?.biography {editBiography.text = uBiography}
+        }
+        // save user info
+        else if (segue.identifier == "saveEdit") {
+            if let eName = editName.text {user?.name = eName}
+            if let eLocation = editLocation.text {user?.location = eLocation}
+            if let eBiography = editBiography.text {user?.biography = eBiography}
+        }
+        else {return}
     }
 }

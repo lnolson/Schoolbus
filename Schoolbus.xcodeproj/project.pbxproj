@@ -10,6 +10,7 @@
 		4526F5CB245274E800B1EB6F /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4526F5CA245274E800B1EB6F /* UserProfile.storyboard */; };
 		4526F5CD2452797F00B1EB6F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526F5CC2452797F00B1EB6F /* ProfileViewController.swift */; };
 		4526F5CF24527A9800B1EB6F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4526F5CE24527A9800B1EB6F /* User.swift */; };
+		45A4DE4B2456575B002B679F /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4DE4A2456575B002B679F /* EditProfileViewController.swift */; };
 		5CB34F8C2450BCA2002E0B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB34F8B2450BCA2002E0B67 /* AppDelegate.swift */; };
 		5CB34F8E2450BCA2002E0B67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB34F8D2450BCA2002E0B67 /* SceneDelegate.swift */; };
 		5CB34F902450BCA2002E0B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB34F8F2450BCA2002E0B67 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		4526F5CA245274E800B1EB6F /* UserProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
 		4526F5CC2452797F00B1EB6F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4526F5CE24527A9800B1EB6F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		45A4DE4A2456575B002B679F /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		5CB34F882450BCA2002E0B67 /* Schoolbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schoolbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB34F8B2450BCA2002E0B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CB34F8D2450BCA2002E0B67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				5CB34F992450BCA4002E0B67 /* Info.plist */,
 				4526F5CA245274E800B1EB6F /* UserProfile.storyboard */,
 				4526F5CC2452797F00B1EB6F /* ProfileViewController.swift */,
+				45A4DE4A2456575B002B679F /* EditProfileViewController.swift */,
 				4526F5CE24527A9800B1EB6F /* User.swift */,
 			);
 			path = Schoolbus;
@@ -271,6 +274,7 @@
 			files = (
 				5CB34F902450BCA2002E0B67 /* ViewController.swift in Sources */,
 				5CB34F8C2450BCA2002E0B67 /* AppDelegate.swift in Sources */,
+				45A4DE4B2456575B002B679F /* EditProfileViewController.swift in Sources */,
 				4526F5CD2452797F00B1EB6F /* ProfileViewController.swift in Sources */,
 				4526F5CF24527A9800B1EB6F /* User.swift in Sources */,
 				5CB34F8E2450BCA2002E0B67 /* SceneDelegate.swift in Sources */,
