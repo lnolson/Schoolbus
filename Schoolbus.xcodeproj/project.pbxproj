@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1714ED24577173001C8FC1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1714EC24577173001C8FC1 /* User.swift */; };
+		3F1714EF24577497001C8FC1 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1714EE24577497001C8FC1 /* Student.swift */; };
+		3F1714F124577530001C8FC1 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1714F024577530001C8FC1 /* Tutor.swift */; };
+		3F1714F3245775B2001C8FC1 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1714F2245775B2001C8FC1 /* Subject.swift */; };
+		3F1714F5245776B7001C8FC1 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1714F4245776B7001C8FC1 /* Message.swift */; };
 		5CB34F8C2450BCA2002E0B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB34F8B2450BCA2002E0B67 /* AppDelegate.swift */; };
 		5CB34F8E2450BCA2002E0B67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB34F8D2450BCA2002E0B67 /* SceneDelegate.swift */; };
 		5CB34F902450BCA2002E0B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB34F8F2450BCA2002E0B67 /* ViewController.swift */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F1714EC24577173001C8FC1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3F1714EE24577497001C8FC1 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		3F1714F024577530001C8FC1 /* Tutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
+		3F1714F2245775B2001C8FC1 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		3F1714F4245776B7001C8FC1 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		5CB34F882450BCA2002E0B67 /* Schoolbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schoolbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB34F8B2450BCA2002E0B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CB34F8D2450BCA2002E0B67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +111,11 @@
 			children = (
 				5CB34F8B2450BCA2002E0B67 /* AppDelegate.swift */,
 				5CB34F8D2450BCA2002E0B67 /* SceneDelegate.swift */,
+				3F1714EC24577173001C8FC1 /* User.swift */,
+				3F1714EE24577497001C8FC1 /* Student.swift */,
+				3F1714F024577530001C8FC1 /* Tutor.swift */,
+				3F1714F2245775B2001C8FC1 /* Subject.swift */,
+				3F1714F4245776B7001C8FC1 /* Message.swift */,
 				5CB34F8F2450BCA2002E0B67 /* ViewController.swift */,
 				5CB34F912450BCA2002E0B67 /* Main.storyboard */,
 				5CB34F942450BCA4002E0B67 /* Assets.xcassets */,
@@ -259,8 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F1714ED24577173001C8FC1 /* User.swift in Sources */,
 				5CB34F902450BCA2002E0B67 /* ViewController.swift in Sources */,
+				3F1714F3245775B2001C8FC1 /* Subject.swift in Sources */,
 				5CB34F8C2450BCA2002E0B67 /* AppDelegate.swift in Sources */,
+				3F1714EF24577497001C8FC1 /* Student.swift in Sources */,
+				3F1714F5245776B7001C8FC1 /* Message.swift in Sources */,
+				3F1714F124577530001C8FC1 /* Tutor.swift in Sources */,
 				5CB34F8E2450BCA2002E0B67 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
