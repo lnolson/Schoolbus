@@ -33,20 +33,24 @@ class ProfileViewController: UIViewController {
         // need role and image
         loadSampleUser()
         
-        name.text = user?.name
-        location.text = user?.location
-        biography.text = user?.biography
-        
-//        if let user = user {
-//        }
+        if let user = user {
+            name.text = user.name
+            biography.text = user.biography
+            location.text = user.location
+        }
+//
+//        if let name = user?.name {self.name.text = name}
+//        if let location = user?.location {self.location.text = location}
+//        if let biography = user?.biography { self.biography.text = biography}
     }
     
     func loadSampleUser() {
         print("load sample users function called")
-        user?.name = "Justin"
-        user?.biography = "I am a student"
-        user?.location = "Phoenix, AZ"
-        user?.rating = 9
+        let name = "Justin Hertzberg"
+        let biography = "I am a student."
+        let location = "Phoenix, AZ"
+        let rating = 9
+        user = User(biography: biography, name: name, location: location, rating: rating)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -59,12 +63,12 @@ class ProfileViewController: UIViewController {
             if let uLocation = user?.location {editLocation.text = uLocation}
             if let uBiography = user?.biography {editBiography.text = uBiography}
         }
-        // save user info
-        else if (segue.identifier == "saveEdit") {
-            if let eName = editName.text {user?.name = eName}
-            if let eLocation = editLocation.text {user?.location = eLocation}
-            if let eBiography = editBiography.text {user?.biography = eBiography}
-        }
+//        // save user info
+//        else if (segue.identifier == "saveEdit") {
+//            if let eName = editName.text {user?.name = eName}
+//            if let eLocation = editLocation.text {user?.location = eLocation}
+//            if let eBiography = editBiography.text {user?.biography = eBiography}
+//        }
         else {return}
     }
 }
