@@ -1,0 +1,59 @@
+saveinfo.swift
+//  Schoolbus(DataSave)
+//
+//  Created by Latifa Alyahya on 4/26/20.
+//  Copyright © 2020 Latifa Alyahya. All rights reserved.
+//
+
+import Foundation
+
+
+struct Schoolbus: Codable { 
+    var TutorName: String  
+    var StudendName: String 
+    var AssignmentDescription: String  
+    var ImmediateHelp: String  
+    
+    static let DocumentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("Schoolbus").appendingPathExtension("plist")
+    
+    static func loadFromFile() -> [Schoolbus]?  {
+        let decoder = PropertyListDecoder()
+        return try? decoder.decode(Array<Schoolbus>.self, from: codedSchoolbus)
+    }
+    
+    static func Schoolbuslist() -> [Schoolbus] {
+        return [Schoolbus(TutorName: "Thao Le", StudendName: " A ", AssignmentDescription: "Solve problems in calculus 3", ImmediateHelp: "Yes, today"),
+                
+                Schoolbus(TutorName: "Latifa", StudendName: " B ", AssignmentDescription: "Program an App it with Swift",ImmediateHelp: "In a few days"),
+                
+               Schoolbus(TutorName: "Tianhang ", StudendName: " C ", AssignmentDescription: "Help writing an essay on the environment", ImmediateHelp: "In a few days"),
+               
+               
+                Schoolbus(TutorName: "Cecilia ", StudendName: "D ", AssignmentDescription: "Data analysis by R", ImmediateHelp: "Yes, today"),
+                
+                
+               Schoolbus(TutorName: "Trae Waggoner", StudendName: " E ", AssignmentDescription: "Solve problems in calculus 3", ImmediateHelp: "Yes, today"),
+               
+               
+                Schoolbus(TutorName: "Ali ", StudendName: " A ", AssignmentDescription: "Solve problems in calculus 3.", ImmediateHelp: "In a few daysy"),
+                
+                
+                Schoolbus(TutorName: "Isabella", StudendName: " S ", AssignmentDescription: "Solve problems in calculus 3", ImmediateHelp: "In a few days"),
+                
+                
+                Schoolbus(TutorName: "Ramon West", StudendName: "K ", AssignmentDescription: "Help writing a report on the physics lab (PHY201)", ImmediateHelp: "Yes, today"),
+                
+                Schoolbus(TutorName: "Ramon West",StudendName: "P", AssignmentDescription: "Solve problems in calculus 3", ImmediateHelp: "Yes, today"),
+                
+               Schoolbus(TutorName: "Isabella", StudendName: "U", AssignmentDescription: "Help with Programming by C", ImmediateHelp: "Yes, today"),
+               
+                Schoolbus(TutorName: "Sam", StudendName: "L", AssignmentDescription: "Help writing a report on the physics lab (PHY201)", ImmediateHelp: "Yes, today")]
+    }
+    
+    static func saveToFile(schoolbus: [Schoolbus]) {
+        let encoder = PropertyListEncoder()
+        let codedSchoolbus = try? encoder.encode(schoolbus)
+       
+    }
+}
