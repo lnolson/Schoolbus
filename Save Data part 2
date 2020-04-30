@@ -1,0 +1,54 @@
+
+import UIKit
+
+class schoolbusTableViewController: UITableViewController {
+    
+    @IBOutlet weak var TutorNameTextField: UITextField!
+    @IBOutlet weak var StudendNameTextField: UITextField!
+    @IBOutlet weak var AssignmentDescriptionTextField: UITextField!
+    @IBOutlet weak var ImmediateHelpTextField: UITextField!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet weak var cancelButton: UIBarButtonItem!
+    var schoolbus: Schoolbus?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if let schoolbus = schoolbus {
+            TutorNameTextField.text = String(schoolbus.TutorName)
+           StudendNameTextField.text = schoolbus.StudendName
+            AssignmentDescriptionTextField.text = schoolbus.AssignmentDescription
+            ImmediateHelpTextField.text = schoolbus.ImmediateHelp
+        }
+        
+        updateSaveButtonState()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        guard segue.identifier == "saveUnwind" else { return }
+        
+        let TutorName = TutorNameTextField.text ?? ""
+        let StudendName = StudendNameTextField.text ?? ""
+        let AssignmentDescription = AssignmentDescription.text ?? ""
+        let ImmediateHelp = ImmediateHelpTextField.text ?? ""
+        schoolbus = Schoolbus(TutorName: TutorName, StudendName: StudendName,  AssignmentDescription:  AssignmentDescription, ImmediateHelp: ImmediateHelp)
+    }
+    
+    func updateSaveButtonState() {
+        let TutorName = TutorNameTextField.text ?? ""
+        let StudendName = StudendNameTextField.text ?? ""
+        let AssignmentDescriptionText = AssignmentDescriptionTextField.text ?? ""
+        let ImmediateHelp = ImmediateHelpTextField.text ?? ""
+        saveButton.isEnabled = !TutorNameText.isEmpty && !StudendNameText.isEmpty && !AssignmentDescriptionText.isEmpty && !ImmediateHelpText.isEmpty
+    }
+    
+    @IBAction func textEditingChanged(_ sender: UITextField) {
+        updateSaveButtonState()
+    }
+    
+    @IBAction func returnPressed(_ sender: UITextField) {
+        
+    }
+}
